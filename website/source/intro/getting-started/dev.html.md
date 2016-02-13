@@ -18,6 +18,7 @@ $ otto compile
 $ otto dev
 ```
 
+
 Now imagine every project being this easy to get started with.
 
 If this is your first time running this command, Otto may have asked for
@@ -25,6 +26,11 @@ permission to install [Vagrant](https://www.vagrantup.com), which it uses
 under the covers. In this case, it may have also installed
 [VirtualBox](http://www.virtualbox.org) as well as a fairly
 large (~350 MB) base image for your environment. This is a one time cost.
+
+**Note: ** If you're using VMware Fusion, then you need to provide the vagrant provider as an environment variable.  For e.g.:
+```
+VAGRANT_DEFAULT_PROVIDER=vmware_fusion otto dev
+```
 
 ## Layers
 
